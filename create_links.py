@@ -1,6 +1,7 @@
 #!/usr/bin/python3 
 
 # This script is used to create links to each dotfile here to the home directory.  
+# Make sure when you are executing the script you are at the directory it's in otherwise it won't work. 
 
 from pathlib import Path
 
