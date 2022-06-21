@@ -7,14 +7,14 @@ from pathlib import Path
 
 import os 
 
+cwd = os.getcwd()
+home = Path.home() 
+
 for dotfile in os.listdir():
     if not dotfile.startswith(".") or dotfile == ".git": 
         continue
 
     print(f"Creating link for: {dotfile}")
-
-    cwd = os.getcwd()
-    home = Path.home()
 
     try:
         os.link(f"{cwd}/{dotfile}", f"{home}/{dotfile}")
