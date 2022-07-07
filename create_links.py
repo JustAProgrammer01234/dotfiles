@@ -3,10 +3,6 @@
 # This script is used to create links to each dotfile here to the home directory.  
 # Make sure when you are executing the script you are at the directory it's in otherwise it won't work. 
 
-# Things to do:
-# 1. Fix the symlink issue. 
-# 2. Fix the cli issue. 
-
 from pathlib import Path
 
 import os 
